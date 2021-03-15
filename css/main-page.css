@@ -8,6 +8,35 @@
     src: url('../fonts/PlayfairDisplay-Regular.ttf');
  }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a { 
+    color: inherit;
+    text-decoration: none; 
+} 
+
+.linha-separadora {
+    width: 120px;
+    height: 2px;
+    background: #A58656;
+}
+
+.buttom-vamos-conversar {
+    width: 122px;
+    background: #242C40;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.buttom-vamos-conversar-label {
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
 .header {
     position: fixed;
     background-color: #242C40; 
@@ -16,7 +45,6 @@
     flex-direction: column;
     z-index: 100;
 }
-
 .header-superior {
     padding: 6px 12% 6px 12%; 
     font-family: 'Martel'; 
@@ -27,22 +55,19 @@
     display: flex;
     justify-content: space-between;
 }
-
 .contato-advogada > span {
     padding-right: 24px;
+    text-decoration: none;
 }
-
-.redes-sociais > img {
+.redes-sociais > a > img {
     padding-left: 24px;
     cursor: pointer;
 }
-
 .header-line {
     width: 100%;
     height: 1px;
     background-color: #FFFFFF;
 }
-
 .header-inferior {
     padding: 6px 12% 6px 12%; 
     font-family: 'Martel'; 
@@ -54,18 +79,17 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .options > span {
     padding-left: 24px;
+    cursor: pointer;
 }
 
 .home {
     background-color: #242C40; 
     width: 100%;
     display: flex; 
-    flex-direction: column;
+    flex-direction: row;
 }
-
 .home-text{
     padding: 88px 12% 118px 12%;
     display: flex;
@@ -73,14 +97,12 @@
     color: #FFFFFF;
     width: 32%;
 }
-
 .home-text-title {
     font-family: 'Playfair';
     padding: 8px 0px;
     font-weight: 900;
     font-size: 52px;
 }
-
 .home-text-subtitle {
     font-family: 'Martel';
     font-style: normal;
@@ -95,13 +117,11 @@
     justify-content: flex-start;
     width: 100%;
 }
-
 .escritorio-titulo {
     display: flex;
     flex-direction: column;
     padding: 240px 0px 124px 12%;
 }
-
 .escritorio-titulo-texto {
     font-family: 'Playfair';
     font-style: normal;
@@ -111,13 +131,11 @@
     color: #242C40;
     min-width: 336px;
 }
-
 .escritorio-titulo-linha {
     width: 34%;
     height: 2px;
     background: #A58656;
 }
-
 .escritorio-descricao {
     padding: 240px 12% 124px 0px;
     font-family: 'Martel';
@@ -127,7 +145,6 @@
     line-height: 27px;
     color: #282828;
 }
-
 .atendimento {
     display: flex;
     flex-direction: row;
@@ -140,7 +157,7 @@
 .atendimento-textos {
     display: flex;
     flex-direction: column;
-    padding: 0px 12% 120px 112px;
+    padding: 52px 12% 120px 112px;
     /* max-width: 424px; */
 }
 .atendimento-textos-titulo {
@@ -162,6 +179,71 @@
     font-weight: normal;
     font-size: 14px;
     padding-top: 16px;
+    padding-bottom: 48px;
+}
+
+.atuacao {
+    display: flex;
+    flex-direction: row;
+    background: #F6F3EE;
+    padding: 80px 12% 0px 12%;
+    justify-content: space-between;
+}
+.atuacao-textos {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+.atuacao-textos-titulo {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    color: #242C40;
+    padding-bottom: 16px;
+}
+.atuacao-textos-linha {
+    height: 2px;
+    background: #A58656;
+    width: 28%;
+}
+.atuacao-textos > .linha-separadora {
+    margin-bottom: 32px;
+}
+.atuacao-direitos {
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+.atuacao-direitos-topico {
+    display: flex;
+    flex-direction: column;
+    flex: 32%;
+    padding: 0px 24px 72px 40px;
+}
+.atuacao-direitos-topico > img {
+    width: 48px;
+    height: 48px;
+}
+.atuacao-direitos-topico-titulo {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #242C40;
+    padding: 16px 0px;
+}
+.atuacao-direitos-topico-subtitulo {
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4D556B;
 }
 
 .footer {
@@ -176,11 +258,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
 .footer > .contato-advogada {
     padding: 12px 0px 12px 12%;
 }
-
 .copyright {
     padding: 12px 12% 12px 0px;
 }
