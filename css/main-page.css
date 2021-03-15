@@ -1,0 +1,186 @@
+@font-face { 
+    font-family: 'Martel';
+    src: url('../fonts/Martel-Regular.ttf');
+ }
+
+ @font-face { 
+    font-family: 'Playfair';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+ }
+
+.header {
+    position: fixed;
+    background-color: #242C40; 
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    z-index: 100;
+}
+
+.header-superior {
+    padding: 6px 12% 6px 12%; 
+    font-family: 'Martel'; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-advogada > span {
+    padding-right: 24px;
+}
+
+.redes-sociais > img {
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+.header-line {
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+.header-inferior {
+    padding: 6px 12% 6px 12%; 
+    font-family: 'Martel'; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options > span {
+    padding-left: 24px;
+}
+
+.home {
+    background-color: #242C40; 
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+}
+
+.home-text{
+    padding: 88px 12% 118px 12%;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    width: 32%;
+}
+
+.home-text-title {
+    font-family: 'Playfair';
+    padding: 8px 0px;
+    font-weight: 900;
+    font-size: 52px;
+}
+
+.home-text-subtitle {
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px
+}
+
+.escritorio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.escritorio-titulo {
+    display: flex;
+    flex-direction: column;
+    padding: 240px 0px 124px 12%;
+}
+
+.escritorio-titulo-texto {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    color: #242C40;
+    min-width: 336px;
+}
+
+.escritorio-titulo-linha {
+    width: 34%;
+    height: 2px;
+    background: #A58656;
+}
+
+.escritorio-descricao {
+    padding: 240px 12% 124px 0px;
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #282828;
+}
+
+.atendimento {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 120px;
+    justify-content: flex-start;
+}
+.atendimento-imagens{
+    padding: 0 0 0 12%;
+}
+.atendimento-textos {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12% 120px 112px;
+    /* max-width: 424px; */
+}
+.atendimento-textos-titulo {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    margin-bottom: 16px;
+}
+.atendimento-textos-linha {
+    width: 28%;
+    height: 2px;
+    background: #A58656;
+}
+.atendimento-textos-descricao {
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding-top: 16px;
+}
+
+.footer {
+    background-color: #242C40; 
+    width: 100%;
+    font-family: 'Martel'; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer > .contato-advogada {
+    padding: 12px 0px 12px 12%;
+}
+
+.copyright {
+    padding: 12px 12% 12px 0px;
+}
