@@ -2,10 +2,20 @@
     font-family: 'Martel';
     src: url('../fonts/Martel-Regular.ttf');
  }
+ @font-face { 
+    font-family: 'Martel';
+    font-weight: bold;
+    src: url('../fonts/Martel-Bold.ttf');
+ }
 
  @font-face { 
     font-family: 'Playfair';
     src: url('../fonts/PlayfairDisplay-Regular.ttf');
+ }
+ @font-face { 
+    font-family: 'Playfair';
+    font-weight: bold;
+    src: url('../fonts/PlayfairDisplay-Bold.ttf');
  }
 
 html {
@@ -83,15 +93,19 @@ a {
     padding-left: 24px;
     cursor: pointer;
 }
+/* .options > span > a {
+    border-bottom: 2px solid #A58656;
+} */
 
 .home {
     background-color: #242C40; 
     width: 100%;
     display: flex; 
     flex-direction: row;
+    justify-content: space-between;
 }
 .home-text{
-    padding: 88px 12% 118px 12%;
+    padding: 176px 0px 118px 12%;
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
@@ -109,6 +123,9 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 27px
+}
+.home-images{
+    padding-right: 12%;
 }
 
 .escritorio {
@@ -244,6 +261,47 @@ a {
     font-size: 14px;
     line-height: 140%;
     color: #4D556B;
+}
+
+.sobre{
+    display: flex;
+    padding: 0px 12% 80px 12%;
+    background: #F6F3EE;
+}
+.sobre-box {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: row;
+    background: #242C40;
+}
+.sobre-box-text {
+    display: flex;
+    flex-direction: column;
+}
+.sobre-box-text-titulo {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 43px;
+    color: #FFFFFF;
+    padding-top: 84px;
+}
+.sobre-box-text-cargo {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #A58656;
+}
+.sobre-box-text-descricao {
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 16px 48px 32px 0px;
 }
 
 .footer {
