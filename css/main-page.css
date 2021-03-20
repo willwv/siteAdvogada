@@ -146,6 +146,7 @@ textarea, input { outline: none; }
 .input {
     border: unset;
     padding: 12px;
+    margin-right: 16px;
     border-bottom: 2px solid grey;
     font-family: Martel;
     font-style: normal;
@@ -160,7 +161,7 @@ textarea, input { outline: none; }
 }
 .inputs > .inputs-container > .buttom-vamos-conversar {
     background-color: #A58656;
-    margin-left: 64px;
+    margin-left: 8px;
 }
 .escritorio {
     display: flex;
