@@ -6,7 +6,7 @@
 </head>
 <body style="margin: 0px;">
     
-<div class="header">
+<div id="header" class="header">
     <span class="header-superior">
         <span class="contato-advogada">
             <span>escritorio@thaislara.com</span>
@@ -29,17 +29,26 @@
             <span><a href="#atendimento">Atendimento</a></span>
             <span><a href="#atuacao">Atuação</a></span>
             <span><a href="#sobre">Sobre</a></span>
+            <span><a href="#blog">Blog</a></span>
         </span>
     </span>
 </div>
 <div id="home" class="home">
+    <img src="./images/home-provisoria.jpg"/> 
     <span class="home-text">
-        <span class="home-text-title">Ajudando você <br>em todos <br>os momentos</span>
+        <span class="home-text-title">Ajudando você em <br>todos os momentos</span>
         <span class="home-text-subtitle">Seja preventivamente ou em momentos de <br>dificuldades, nosso objetivo é apresentar a melhor <br>solução para a sua situação.</span>
     </span>
-    <span class="home-images">
-        <img src="./images/home.png"  style="z-index: 1; -webkit-transform: translate(0px,156px); float: right;"/> 
-        <img src="./images/home-sombra.svg" style="z-index: 2; -webkit-transform: translate(48px,188px);">
+</div>
+<div id="inputs" class="inputs">
+    <span class="inputs-container">
+        <input id="inputs-nome" class="input" placeholder="Nome">
+        <input id="inputs-email"class="input"  placeholder="E-mail">
+        <span id="input-button" class="buttom-vamos-conversar">
+            <span class="buttom-vamos-conversar-label">
+                Vamos conversar
+            </span>
+        </span>
     </span>
 </div>
 <div id="escritorio" class="escritorio">
@@ -71,13 +80,8 @@
 </div>
 <div id="atuacao" class="atuacao">
     <span class="atuacao-textos">
-        <span class="atuacao-textos-titulo">Estamos aqui <br> para te ajudar</span>
+        <span class="atuacao-textos-titulo">Nossas áreas de atuação</span>
         <span class="linha-separadora"></span>
-        <span class="buttom-vamos-conversar">
-            <span class="buttom-vamos-conversar-label">
-                Vamos conversar
-            </span>
-        </span>
     </span>
     <span class="atuacao-direitos">
         <span class="atuacao-direitos-topico">
@@ -101,6 +105,13 @@
             <span class="atuacao-direitos-topico-subtitulo">Estamos prontos para atendê-lo em casos de quebra de contrato, negligencia, atraso e cancelamento de voos, entre outros.</span>
         </span>
     </span>
+    <span class="buttom-vamos-conversar">
+        <a href="#input-button">
+            <span class="buttom-vamos-conversar-label">
+                Vamos conversar
+            </span>
+        </a>
+    </span>
 </div>
 <span id="sobre" class="sobre">
     <span class="sobre-box">
@@ -117,6 +128,41 @@
         </span>
     </span>
 </span>
+<span id="blog" class="blog">
+    <span class="blog-textos">
+        <span class="blog-textos-titulo">Textos em destaque</span>
+        <span class="linha-separadora"></span>
+    </span>
+    <span class="blog-destaques">
+        <span class="blog-destaques-destaque">
+            <img src="./images/destaques/destaque-1.png">
+            <span class="blog-destaques-destaque-titulo">A arte de advogar</span>
+            <span class="blog-destaques-destaque-categoria">Artigo</span>
+            <span class="blog-destaques-destaque-texto">Você é realmente vocacionado para exercer a profissão de advogado?</span>
+            <span class="ver-mais-box">
+                <span class="ver-mais-box-text">Ver Mais</span>
+            </span>
+        </span>
+        <span class="blog-destaques-destaque">
+            <img src="./images/destaques/destaque-1.png">
+            <span class="blog-destaques-destaque-titulo">A arte de advogar</span>
+            <span class="blog-destaques-destaque-categoria">Artigo</span>
+            <span class="blog-destaques-destaque-texto">Você é realmente vocacionado para exercer a profissão de advogado?</span>
+            <span class="ver-mais-box">
+                <span class="ver-mais-box-text">Ver Mais</span>
+            </span>
+        </span>
+        <span class="blog-destaques-destaque">
+            <img src="./images/destaques/destaque-1.png">
+            <span class="blog-destaques-destaque-titulo">A arte de advogar</span>
+            <span class="blog-destaques-destaque-categoria">Artigo</span>
+            <span class="blog-destaques-destaque-texto">Você é realmente vocacionado para exercer a profissão de advogado?</span>
+            <span class="ver-mais-box">
+                <span class="ver-mais-box-text">Ver Mais</span>
+            </span>
+        </span>
+    </span>
+</span>
 <div class="footer">
     <span class="contato-advogada">
         <span>escritorio@thaislara.com</span>
@@ -126,5 +172,6 @@
         Copyright 2020 ©
     </span>
 </div>
+<script src="./js/scripts.js"></script>
 </body>
 </html>
