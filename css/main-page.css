@@ -97,6 +97,9 @@ a {
     padding-left: 24px;
     cursor: pointer;
 }
+.options-mobile{
+    display: none;
+}
 /* .options > span > a {
     border-bottom: 2px solid #A58656;
 } */
@@ -456,6 +459,12 @@ textarea, input { outline: none; }
         width: 44px;
         height: 44px;
         align-self: flex-end;
+    }
+    .options{
+        display: none;
+    }
+    .options-mobile{
+        display: block;
     }
     .contato-advogada{
         display: none;
