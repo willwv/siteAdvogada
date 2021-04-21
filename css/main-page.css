@@ -452,6 +452,9 @@ textarea, input { outline: none; }
 .footer > .contato-advogada {
     padding: 12px 0px 12px var(--side-columns-width);
 }
+.footer > .header-line{
+    display: none;
+}
 .copyright {
     padding: 12px var(--side-columns-width) 12px 0px;
 }
@@ -477,7 +480,7 @@ textarea, input { outline: none; }
     .options-mobile{
         display: block;
     }
-    .contato-advogada{
+    .header-superior > .contato-advogada{
         display: none;
     }
     .inputs-container{
@@ -602,5 +605,12 @@ textarea, input { outline: none; }
         font-size: 12px;
         line-height: 20px;
         color: #FFFFFF;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer > .header-line{
+        display: block;
     }
 }
