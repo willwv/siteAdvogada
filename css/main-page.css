@@ -161,7 +161,7 @@ textarea, input { outline: none; }
     display: flex;
 }
 .loading {    
-    /* display: none; */
+    display: none;
 }
 .inputs > .inputs-container > .buttom-vamos-conversar {
     background-color: #A58656;
