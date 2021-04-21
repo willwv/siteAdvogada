@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    console.log(screen.width)
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {

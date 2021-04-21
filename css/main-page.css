@@ -161,7 +161,7 @@ textarea, input { outline: none; }
     display: flex;
 }
 .loading {    
-    display: none;
+    /* display: none; */
 }
 .inputs > .inputs-container > .buttom-vamos-conversar {
     background-color: #A58656;
@@ -211,6 +211,12 @@ textarea, input { outline: none; }
 }
 .atendimento-imagens{
     padding: 0 0 0 var(--side-columns-width);
+}
+.atendimento-imagem-senhoras{
+    content:url('../images/senhoras.png');
+}
+.atendimento-imagem-senhoras-sombra{
+    content:url('../images/senhoras-sombra.svg');
 }
 .atendimento-textos {
     display: flex;
@@ -440,9 +446,104 @@ textarea, input { outline: none; }
     padding: 12px var(--side-columns-width) 12px 0px;
 }
 
-
-@media(max-width: 935px) {
+@media only screen and (max-width: 935px) {
+    :root {
+        --central-column-max-width: unset;
+        --side-columns-width: 16px;
+    }
+    .loading {    
+        display: none;
+        width: 44px;
+        height: 44px;
+        align-self: flex-end;
+    }
     .contato-advogada{
         display: none;
+    }
+    .inputs-container{
+        flex-direction: column;
+    }
+    .header-superior{
+        align-self: flex-end;
+    }
+    .input{
+        margin-right: unset;
+    }
+    .inputs > .inputs-container > .buttom-vamos-conversar{
+        margin-left: unset;
+        margin-top: 16px;
+        align-self: flex-end;
+    }
+    .inputs {
+        -webkit-transform: translate(0px,-40px);
+    }
+    .home{
+        height: 552px;
+    }
+    .home > img {
+        height: 100%;
+    } 
+    .home-text{
+        padding: 121px var(--side-columns-width) 0px var(--side-columns-width);
+    }
+    .home-text-title {
+        font-family: 'Playfair';
+        font-size: 32px;
+    }
+    .home-text-subtitle {
+        font-size: 14px;
+    }
+    .escritorio{
+        flex-direction: column;
+    }
+    .escritorio-titulo-texto{
+        font-size: 32px;
+    }
+    .escritorio-titulo{
+        padding: 40px 0px 0px var(--side-columns-width);
+    }
+    .escritorio-descricao{
+        padding: 16px var(--side-columns-width) 96px var(--side-columns-width);
+    }
+    .atendimento{
+        flex-direction: column;
+        padding-bottom: unset;
+    }
+    .atendimento-imagem-senhoras{
+        content:url('../images/senhoras-mobile.png');
+    }
+    .atendimento-imagem-senhoras-sombra{
+        content:url('../images/senhoras-sombra-mobile.png');
+    }
+    .atendimento-textos{
+        padding: 40px var(--side-columns-width) 88px var(--side-columns-width);
+    }
+    .atuacao-textos-titulo{
+        text-align: center;
+        font-size: 32px;
+    }
+    .sobre{
+        padding: 0px var(--side-columns-width) 80px var(--side-columns-width);
+    }
+    .sobre-box{
+        flex-direction: column;
+    }
+    .sobre-box-text{
+        padding: 0px 16px;
+    }
+    .sobre-box-text-titulo{
+        padding-top: 32px;
+    }
+    .sobre-box-text-descricao{
+        padding: 16px 0px 32px 0px;
+    }
+    .blog-textos-titulo{
+        text-align: center;
+        font-size: 32px;
+        padding-bottom: 8px;
+    }
+    .blog-destaques-destaque{
+        padding: 40px 0px 80px 0px;
+
     }
 }
