@@ -439,3 +439,10 @@ textarea, input { outline: none; }
 .copyright {
     padding: 12px var(--side-columns-width) 12px 0px;
 }
+
+
+@media(max-width: 935px) {
+    .contato-advogada{
+        display: none;
+    }
+}
