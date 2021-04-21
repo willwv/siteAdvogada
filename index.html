@@ -40,19 +40,21 @@
         <span class="home-text-subtitle">Seja preventivamente ou em momentos de <br>dificuldades, nosso objetivo é apresentar a melhor <br>solução para a sua situação.</span>
     </span>
 </div>
-<form name="form" action="https://api.sheetmonkey.io/form/8wcPDZELrPsF1pRKQcKqWM" method="post">
-    <div id="inputs" class="inputs">
-        <span class="inputs-container">
-            <input id="inputs-nome" class="input" placeholder="Nome">
-            <input id="inputs-email"class="input"  placeholder="E-mail">
-            <span id="input-button" class="buttom-vamos-conversar" onclick="form.submit()">
-                <span class="buttom-vamos-conversar-label">
-                    Vamos conversar
-                </span>
+<div id="inputs" class="inputs">
+    <span class="inputs-container">
+        <input id="inputs-nome" class="input" name="Nome" placeholder="Nome">
+        <span class="loading"></span>
+
+        <input id="inputs-email" class="input" name="Email" placeholder="E-mail">
+        <input type="hidden" name="Data" value="x-sheetmonkey-current-date-time">
+        <img id="loading" class="loading" src="./images/Spinner-1s-44px.gif" >
+        <span id="input-button" class="buttom-vamos-conversar">
+            <span class="buttom-vamos-conversar-label">
+                Vamos conversar
             </span>
         </span>
-    </div>
-</form>
+    </span>
+</div>
 
 <div id="escritorio" class="escritorio">
     <span class="escritorio-titulo">
@@ -177,6 +179,7 @@
         Copyright 2020 ©
     </span>
 </div>
-<script src="./js/scripts.js"></script>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/scripts.js"></script>
 </html>
