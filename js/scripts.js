@@ -9,7 +9,17 @@ $(document).ready(function(){
         document.getElementById("header").style.backgroundColor = "transparent";
         }
     }
-
+    
+    $(".all-options")[0].style.display = 'none';
+    $(".options-mobile").click(function(){
+        $(".all-options")[0].style.display = 'flex';
+    });
+    $(".options-close").click(function(){
+        $(".all-options")[0].style.display = 'none';
+    });
+    $(".options-all").click(function(){
+        $(".all-options")[0].style.display = 'none';
+    });
     $("#input-button").click(function(){
         showLoading();
         if(nameValidation() && emailValidation()){
