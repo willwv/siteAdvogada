@@ -30,7 +30,7 @@ $(document).ready(function(){
             }
             $.ajax({
                 type: "POST",
-                url: "https://api.sheetmonkey.io/form/bUNmegi99yE8cU7L17U33y",
+                url: "https://api.sheetmonkey.io/form/swF19Rzp6QNJFXwPXXHFBE",
                 data: formData,
                 success: () => hideLoading()
                 // dataType: dataType
