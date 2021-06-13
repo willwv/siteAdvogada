@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $(".include-header").load("./components/header.html");
+    $(".include-footer").load("./components/footer.html");
     
     $("#input-button").click(function(){
         showLoading();
