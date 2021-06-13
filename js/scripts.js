@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    window.onscroll = function() {scrollFunction()};
-    
+$(document).ready(function(){    
     $("#input-button").click(function(){
         showLoading();
         if(nameValidation() && emailValidation()){
