@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log(screen.width)
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
@@ -65,4 +64,5 @@ $(document).ready(function(){
             return true;
         }
     }
+    $("#includedContent").load("tst.html");
 });
