@@ -1,4 +1,6 @@
-$(document).ready(function(){    
+$(document).ready(function(){
+    $(".include-header").load("./components/header.html");
+    
     $("#input-button").click(function(){
         showLoading();
         if(nameValidation() && emailValidation()){
