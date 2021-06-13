@@ -64,5 +64,5 @@ $(document).ready(function(){
             return true;
         }
     }
-    $("#includedContent").load("tst.html");
+    $(".include-header").load("./components/header.html");
 });
