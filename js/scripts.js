@@ -1,9 +1,7 @@
 window.onload = function(){
 
-    loadDocument("index-page-include-header", "/components/", "header");
-    loadDocument("index-page-include-footer", "/components/", "footer");
-    // document.getElementsByClassName("include-header").load("./components/header.html");
-    // document.getElementsByClassName("include-footer").load("./components/footer.html");
+    loadDocument("index-page-include-header", "/components/", "header", true);
+    loadDocument("index-page-include-footer", "/components/", "footer", false);
 
     document.getElementById("input-button").click(function(){
         showLoading();
@@ -50,17 +48,18 @@ window.onload = function(){
             return true;
         }
     }
-    function loadDocument (id, documentFolder, documentName, e) {
+    function loadDocument (id, documentFolder, documentName, importJs, e) {
         (e || window.event).preventDefault();
     
         fetch(window.location.origin + documentFolder + documentName + ".html")
         .then((response) => response.text())
         .then((html) => {
             document.getElementById(id).innerHTML = html;
-            
-            var script = document.createElement('script');
-            script.src = window.location.origin + "/js/" + documentName + ".js";
-            document.getElementsByTagName('html')[0].appendChild(script);
+            if(importJs){
+                var script = document.createElement('script');
+                script.src = window.location.origin + "/js/" + documentName + ".js";
+                document.getElementsByTagName('html')[0].appendChild(script);
+            }
         })
         .catch((error) => {
             console.warn(error);
