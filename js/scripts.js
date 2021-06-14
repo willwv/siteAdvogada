@@ -53,7 +53,7 @@ window.onload = function(){
     function loadDocument (id, documentDir, e) {
         (e || window.event).preventDefault();
     
-        fetch("https://www.thaislara.com/" + documentDir)
+        fetch("https://www.thaislara.com" + documentDir)
         .then((response) => response.text())
         .then((html) => {
             document.getElementById(id).innerHTML = html;
