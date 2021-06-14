@@ -15,6 +15,6 @@ document.getElementsByClassName("options-mobile")[0].onclick = function(){
 document.getElementsByClassName("options-close")[0].onclick = function(){
     document.getElementsByClassName("all-options")[0].style.display = 'none';
 };
-document.getElementsByClassName(".options-all")[0].onclick = function(){
+document.getElementsByClassName("options-all")[0].onclick = function(){
     document.getElementsByClassName("all-options")[0].style.display = 'none';
 };
