@@ -1,13 +1,16 @@
-$(document).ready(function(){
-    $(".include-header").load("./components/header.html");
-    $(".include-footer").load("./components/footer.html");
-    
-    $("#input-button").click(function(){
+window.onload = function(){
+
+    loadDocument("index-page-include-header", "/components/header.html");
+    loadDocument("index-page-include-footer", "/components/footer.html");
+    // document.getElementsByClassName("include-header").load("./components/header.html");
+    // document.getElementsByClassName("include-footer").load("./components/footer.html");
+
+    document.getElementById("input-button").click(function(){
         showLoading();
         if(nameValidation() && emailValidation()){
             let formData = {
-                Nome: $("#inputs-nome").val(),
-                Email: $("#inputs-email").val(),
+                Nome: document.getElementById("inputs-nome").value,
+                Email: document.getElementById("inputs-email").value,
                 Data: "x-sheetmonkey-current-date-time"
             }
             $.ajax({
@@ -22,17 +25,17 @@ $(document).ready(function(){
         }
     });
     function showLoading(){
-        $("#loading").show();
-        $("#input-button").hide();
+        document.getElementById("loading").style.display = 'block';
+        document.getElementById("input-button").style.display = 'none';
     }
     function hideLoading(){
-        $("#loading").hide();
-        $("#input-button").show();
+        document.getElementById("loading").style.display = 'none';
+        document.getElementById("input-button").style.display = 'block';
     }
     function emailValidation() {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!re.test(String($("#inputs-email").val()).toLowerCase())){
-            $("#inputs-email").val('').attr("placeholder","Informe um e-mail válido").focus();
+        if(!re.test(String(document.getElementById("inputs-email").value).toLowerCase())){
+            document.getElementById("inputs-email").val('').attr("placeholder","Informe um e-mail válido").focus();
             return false;
         }else{
             return true;
@@ -40,11 +43,23 @@ $(document).ready(function(){
     }
     function nameValidation() {
         
-        if($("#inputs-nome").val().length <= 0){
-            $("#inputs-nome").attr("placeholder","Informe um nome válido").focus();
+        if(document.getElementById("inputs-nome").value.length <= 0){
+            document.getElementById("inputs-nome").attr("placeholder","Informe um nome válido").focus();
             return false;
         }else{
             return true;
         }
     }
-});
+    function loadDocument (id, documentDir, e) {
+        (e || window.event).preventDefault();
+    
+        fetch("https://www.thaislara.com/" + documentDir)
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+        })
+        .catch((error) => {
+            console.warn(error);
+        });
+    } 
+};

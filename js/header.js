@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload = function() {
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
@@ -9,14 +9,14 @@ $(document).ready(function(){
         }
     }
     
-    $(".all-options")[0].style.display = 'none';
-    $(".options-mobile").click(function(){
-        $(".all-options")[0].style.display = 'flex';
-    });
-    $(".options-close").click(function(){
-        $(".all-options")[0].style.display = 'none';
-    });
-    $(".options-all").click(function(){
-        $(".all-options")[0].style.display = 'none';
-    });
-});
+    document.getElementsByClassName("all-options")[0].style.display = 'none';
+    document.getElementsByClassName("options-mobile")[0].onclick = function(){
+        document.getElementsByClassName("all-options")[0].style.display = 'flex';
+    };
+    document.getElementsByClassName("options-close")[0].onclick = function(){
+        document.getElementsByClassName("all-options")[0].style.display = 'none';
+    };
+    document.getElementsByClassName(".options-all")[0].onclick = function(){
+        document.getElementsByClassName("all-options")[0].style.display = 'none';
+    };
+};
