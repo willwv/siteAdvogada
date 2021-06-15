@@ -1,7 +1,8 @@
 window.onload = function(){
-
+    // readTextFile("meu-eu-advogada");
     loadDocument("index-page-include-header", "/components/", "header", true);
     loadDocument("index-page-include-footer", "/components/", "footer", false);
+    // loadDocument("index-page-include-footer", "/components/", "blog", false);
 
     document.getElementById("input-button").onclick = function(){
         showLoading();
@@ -68,5 +69,24 @@ window.onload = function(){
         .catch((error) => {
             console.warn(error);
         });
-    } 
+    }
+    function readTextFile(documentName)
+    {
+        let rawFile = new XMLHttpRequest();
+        let filePath =  window.location.origin + "/texts/" + documentName + ".txt";
+        console.log(filePath);
+        rawFile.open("GET", filePath, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    alert(allText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
 };

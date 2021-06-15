@@ -407,6 +407,12 @@ textarea, input { outline: none; }
     padding: 56px 0px 80px 0px;
     max-width: 248px;
 }
+.blog-destaques-destaque > img {
+    width: 248px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
 .blog-destaques-destaque-titulo {
     font-family: 'Playfair';
     font-style: normal;
