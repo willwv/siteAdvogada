@@ -58,7 +58,7 @@ window.onload = function(){
             if(importJs){
                 var script = document.createElement('script');
                 script.src = window.location.origin + "/js/" + documentName + ".js";
-                document.getElementsByTagName('html')[0].appendChild(script);
+                document.getElementsByTagName('body')[0].appendChild(script);
             }
         })
         .catch((error) => {
