@@ -1,20 +1,24 @@
 @font-face { 
     font-family: 'Martel';
+    font-display: swap;
     src: url('../fonts/Martel-Regular.ttf');
  }
  @font-face { 
     font-family: 'Martel';
     font-weight: bold;
+    font-display: swap;
     src: url('../fonts/Martel-Bold.ttf');
  }
 
  @font-face { 
     font-family: 'Playfair';
+    font-display: swap;
     src: url('../fonts/PlayfairDisplay-Regular.ttf');
  }
  @font-face { 
     font-family: 'Playfair';
     font-weight: bold;
+    font-display: swap;
     src: url('../fonts/PlayfairDisplay-Bold.ttf');
  }
 
@@ -333,6 +337,10 @@ textarea, input { outline: none; }
     display: flex;
     flex-direction: row;
     background: #242C40;
+}
+.sobre-box-image > img {
+    width: 248px;
+    height: 316px;
 }
 .sobre-box-text {
     display: flex;
