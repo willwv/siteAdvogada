@@ -45,7 +45,7 @@ window.onload = function(){
         
         if(document.getElementById("inputs-nome").value.length <= 0){
             document.getElementById("inputs-nome").value = ''
-            document.getElementById("inputs-nome").setAttribute("placeholder","Informe um nome válido").focus();
+            document.getElementById("inputs-nome").setAttribute("placeholder","Informe um nome válido");
             document.getElementById("inputs-nome").focus();
             return false;
         }else{
