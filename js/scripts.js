@@ -33,7 +33,9 @@ window.onload = function(){
     function emailValidation() {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if(!re.test(String(document.getElementById("inputs-email").value).toLowerCase())){
-            document.getElementById("inputs-email").val('').attr("placeholder","Informe um e-mail válido").focus();
+            document.getElementById("inputs-email").value = ''
+            document.getElementById("inputs-email").setAttribute("placeholder","Informe um e-mail válido");
+            document.getElementById("inputs-email").focus();
             return false;
         }else{
             return true;
@@ -42,7 +44,9 @@ window.onload = function(){
     function nameValidation() {
         
         if(document.getElementById("inputs-nome").value.length <= 0){
-            document.getElementById("inputs-nome").attr("placeholder","Informe um nome válido").focus();
+            document.getElementById("inputs-nome").value = ''
+            document.getElementById("inputs-nome").setAttribute("placeholder","Informe um nome válido").focus();
+            document.getElementById("inputs-nome").focus();
             return false;
         }else{
             return true;
