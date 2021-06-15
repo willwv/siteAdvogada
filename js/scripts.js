@@ -3,7 +3,7 @@ window.onload = function(){
     loadDocument("index-page-include-header", "/components/", "header", true);
     loadDocument("index-page-include-footer", "/components/", "footer", false);
 
-    document.getElementById("input-button").click(function(){
+    document.getElementById("input-button").onclick = function(){
         showLoading();
         if(nameValidation() && emailValidation()){
             let formData = {
@@ -21,7 +21,7 @@ window.onload = function(){
         }else{
             hideLoading();
         }
-    });
+    };
     function showLoading(){
         document.getElementById("loading").style.display = 'block';
         document.getElementById("input-button").style.display = 'none';
