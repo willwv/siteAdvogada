@@ -1,0 +1,80 @@
+:root {
+    --central-blog-column-max-width: 688px;
+    --side-blog-columns-width: calc((100vw - var(--central-blog-column-max-width))/2);
+}
+.linha-separadora {
+    width: 32px;
+}
+.blog-label {
+    display: flex;
+    padding-top: 137px;
+    flex-direction: column;
+    padding-left: var(--side-blog-columns-width);
+}
+.blog-cabecalho{
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+    padding-left: var(--side-blog-columns-width);
+    padding-right: var(--side-blog-columns-width);
+}
+.blog-cabecalho-titulo {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+.blog-cabecalho-titulo-subtitulo {
+    font-family: Martel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #242C40;
+}
+.blog-imagem{
+    display: flex;
+    padding-top: 40px;
+    padding-left: var(--side-blog-columns-width);
+    width: var(--central-blog-column-max-width);
+    height: 240px;
+
+}
+.blog-imagem-fit {
+    width: 100%;
+    background-image: url('/images/destaques/arte-advogar.jpg');
+    background-size: 180px 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: var(--central-blog-column-max-width) 400px; tamanho default conforme figma*/
+}
+.blog-texto{
+    display: flex;
+    padding: 84px var(--side-blog-columns-width) 80px var(--side-blog-columns-width);
+}
+.blog-texto-fit{
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #282828;
+}
+@media only screen and (max-width: 935px) {
+    :root {
+        --central-blog-column-max-width: unset;
+        --side-blog-columns-width: 16px;
+    }
+    .blog-imagem{
+        display: flex;
+        padding-top: 40px;
+        padding-left: unset;
+        width: 100%;
+        height: 240px;
+    
+    }
+    .blog-imagem-fit {
+        width: 100%;
+        background-image: url('/images/destaques/arte-advogar.jpg');
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+    }
+}

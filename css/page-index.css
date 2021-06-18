@@ -1,27 +1,3 @@
-@font-face { 
-    font-family: 'Martel';
-    font-display: swap;
-    src: url('../fonts/Martel-Regular.ttf');
- }
- @font-face { 
-    font-family: 'Martel';
-    font-weight: bold;
-    font-display: swap;
-    src: url('../fonts/Martel-Bold.ttf');
- }
-
- @font-face { 
-    font-family: 'Playfair';
-    font-display: swap;
-    src: url('../fonts/PlayfairDisplay-Regular.ttf');
- }
- @font-face { 
-    font-family: 'Playfair';
-    font-weight: bold;
-    font-display: swap;
-    src: url('../fonts/PlayfairDisplay-Bold.ttf');
- }
-
 :root {
     --central-column-max-width: 1040px;
     --side-columns-width: calc((100vw - var(--central-column-max-width))/2);
@@ -33,12 +9,6 @@ html {
 a { 
     color: inherit;
     text-decoration: none; 
-} 
-
-.linha-separadora {
-    width: 120px;
-    height: 2px;
-    background: #A58656;
 }
 .all-options{
     width: 100%;
@@ -111,9 +81,6 @@ a {
 .options-mobile{
     display: none;
 }
-/* .options > span > a {
-    border-bottom: 2px solid #A58656;
-} */
 
 .home {
     background-color: #242C40; 
@@ -135,7 +102,6 @@ a {
 }
 .home-text-title {
     font-family: 'Playfair';
-    /* padding: 8px 0px; */
     font-weight: 900;
     font-size: 52px;
 }
@@ -236,7 +202,6 @@ textarea, input { outline: none; }
     display: flex;
     flex-direction: column;
     padding: 52px var(--side-columns-width) 120px 112px;
-    /* max-width: 424px; */
 }
 .atendimento-textos-titulo {
     font-family: 'Playfair';
@@ -330,7 +295,6 @@ textarea, input { outline: none; }
     display: flex;
     padding: 0px var(--side-columns-width) 112px var(--side-columns-width);
     -webkit-transform: translate(0px,-195px);
-    /* background: #F6F3EE; */
 }
 .sobre-box {
     margin-left: 32px;

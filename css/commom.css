@@ -1,0 +1,28 @@
+@font-face { 
+    font-family: 'Martel';
+    font-display: swap;
+    src: url('../fonts/Martel-Regular.ttf');
+ }
+ @font-face { 
+    font-family: 'Martel';
+    font-weight: bold;
+    font-display: swap;
+    src: url('../fonts/Martel-Bold.ttf');
+ }
+
+ @font-face { 
+    font-family: 'Playfair';
+    font-display: swap;
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+ }
+ @font-face { 
+    font-family: 'Playfair';
+    font-weight: bold;
+    font-display: swap;
+    src: url('../fonts/PlayfairDisplay-Bold.ttf');
+ }
+.linha-separadora {
+    width: 120px;
+    height: 2px;
+    background: #A58656;
+}
