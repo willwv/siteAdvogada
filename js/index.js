@@ -8,13 +8,15 @@ window.onload = function(){
         if(nameValidation() && emailValidation()){
             let formData = {
                 Nome: document.getElementById("inputs-nome").value,
-                Email: document.getElementById("inputs-email").value,
-                Data: "x-sheetmonkey-current-date-time"
+                Email: document.getElementById("inputs-email").value
             }
             $.ajax({
                 type: "POST",
-                url: "https://api.sheetmonkey.io/form/swF19Rzp6QNJFXwPXXHFBE",
-                data: formData,
+                url: "https://script.google.com/macros/library/d/1zQOOuVq3J3kXl2Q2x8GJjQHlxNNUPkjvsBqZap7Q6UhZk77io0mbJPWb/1",
+                data: JSON.stringify({
+                    Nome: document.getElementById("inputs-nome").value,
+                    Email: document.getElementById("inputs-email").value
+                }),
                 success: () => hideLoading()
                 // dataType: dataType
             });
