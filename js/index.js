@@ -1,4 +1,5 @@
 window.onload = function(){
+    changeHomeImage();
     loadDocument("index-page-include-header", "/components/", "header", true);
     loadDocument("index-page-include-footer", "/components/", "footer", false);
     loadDocument("index-page-include-blog", "/components/", "blog", false);
