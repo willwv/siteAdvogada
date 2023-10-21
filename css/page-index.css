@@ -476,7 +476,6 @@ textarea, input { outline: none; }
     }
     .header-superior{
         background-color: rgb(36, 44, 64);
-        align-self: flex-end;
     }
     .input{
         margin-right: unset;
