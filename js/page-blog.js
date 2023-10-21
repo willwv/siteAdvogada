@@ -1,4 +1,5 @@
 window.onload = function(){
+    var OPERACAO_CONCLUIDA = 4;
     loadDocument("blog-page-include-header", "/components/", "header", true);
     loadDocument("blog-page-include-footer", "/components/", "footer", false);
     fitText();
@@ -31,7 +32,7 @@ window.onload = function(){
         rawFile.open("GET", filePath, false);
         rawFile.onreadystatechange = function ()
         {
-            if(rawFile.readyState === 4)
+            if(rawFile.readyState === OPERACAO_CONCLUIDA)
             {
                 if(rawFile.status === 200 || rawFile.status == 0)
                 {

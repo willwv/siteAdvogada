@@ -8,14 +8,14 @@ window.onload = function(){
         if(nameValidation() && emailValidation()){
             let formData = {
                 Nome: document.getElementById("inputs-nome").value,
-                Email: document.getElementById("inputs-email").value
+                Email: document.getElementById("inputs-telefone").value
             }
             $.ajax({
                 type: "POST",
                 url: "https://script.google.com/macros/s/AKfycbyW9XmXyYQEEAX-5okLb2TZy0iUD198PuJvSdnqfou4puB8yWyRfNd78HZbzgnYRwzH/exec",
                 data: formData,
                 success: () => {
-                    document.getElementById("inputs-email").value = ''
+                    document.getElementById("inputs-telefone").value = ''
                     document.getElementById("inputs-nome").value = ''
                     hideLoading()
                 }
@@ -34,11 +34,11 @@ window.onload = function(){
         document.getElementById("input-button").style.display = 'block';
     }
     function emailValidation() {
-        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!re.test(String(document.getElementById("inputs-email").value).toLowerCase())){
-            document.getElementById("inputs-email").value = ''
-            document.getElementById("inputs-email").setAttribute("placeholder","Informe um e-mail válido");
-            document.getElementById("inputs-email").focus();
+        const re = /^[1-9]{2}9[0-9]{8}$/;
+        if(!re.test(String(document.getElementById("inputs-telefone").value).toLowerCase())){
+            document.getElementById("inputs-telefone").value = ''
+            document.getElementById("inputs-telefone").setAttribute("placeholder","Informe um telefone válido");
+            document.getElementById("inputs-telefone").focus();
             return false;
         }else{
             return true;
@@ -71,5 +71,10 @@ window.onload = function(){
         .catch((error) => {
             console.warn(error);
         });
+    }
+    function changeHomeImage(){
+        if(window.screen.width <= 935){
+            document.getElementById("home-img").src = "./images/newhomemobile.png"
+        }
     }
 };
