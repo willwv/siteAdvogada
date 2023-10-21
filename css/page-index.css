@@ -460,6 +460,12 @@ textarea, input { outline: none; }
     }
     .options-mobile{
         display: block;
+        background-color: rgb(36, 44, 64);
+        border-radius: 85px;
+        width: 26px;
+    }
+    .options-mobile > img {
+        padding-left: 7px;
     }
     .header-superior > .contato-advogada{
         font-size: 11px;
@@ -469,6 +475,7 @@ textarea, input { outline: none; }
         flex-direction: column;
     }
     .header-superior{
+        background-color: rgb(36, 44, 64);
         align-self: flex-end;
     }
     .input{
