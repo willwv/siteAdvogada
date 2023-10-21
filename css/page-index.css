@@ -462,9 +462,10 @@ textarea, input { outline: none; }
         display: block;
     }
     .header-superior > .contato-advogada{
-        display: none;
+        font-size: 11px;
     }
     .inputs-container{
+        width: 100%;
         flex-direction: column;
     }
     .header-superior{
@@ -472,6 +473,7 @@ textarea, input { outline: none; }
     }
     .input{
         margin-right: unset;
+        width: unset;
     }
     .inputs > .inputs-container > .buttom-vamos-conversar{
         margin-left: unset;
